@@ -21,11 +21,11 @@ export default function SiteFooter() {
       id="agency-credit"
       className="mt-16 sm:mt-24 mx-auto w-full max-w-[1380px] px-3 sm:px-6 lg:px-10 pb-4 sm:pb-7"
     >
-      <div className="relative isolate w-full overflow-hidden rounded-2xl sm:rounded-3xl border border-[#774D78]/25 shadow-2xl shadow-[#2A1C2B]/20 min-h-[450px] sm:min-h-[490px] flex flex-col justify-between">
+      <div className="relative isolate w-full overflow-hidden rounded-2xl sm:rounded-3xl border border-[#774D78]/25 shadow-2xl shadow-[#2A1C2B]/20 min-h-0 sm:min-h-[490px] flex flex-col justify-between">
         {/* Clearer Katha Dining Hall Background Photo with Balanced Readability Fade */}
         <div className="absolute inset-0 z-0">
           <EditorialImage
-            src="/katha-photos/dining-hall.jpg"
+            src="/katha-photos/dining-hall.webp"
             alt="Warm evening dining room inside Katha by Bhupa Greens"
             sizes="(max-width: 1380px) 100vw, 1380px"
             containerClassName="relative w-full h-full"
@@ -42,7 +42,7 @@ export default function SiteFooter() {
         </div>
 
         {/* Enlarged & Evenly Aligned Footer Content Container */}
-        <div className="relative z-10 mx-auto w-full max-w-6xl px-5 sm:px-8 lg:px-12 pt-14 sm:pt-18 pb-10 sm:pb-12 flex-1 flex flex-col justify-between gap-12 text-[#FBF7EE]">
+        <div className="relative z-10 mx-auto w-full max-w-6xl px-4 sm:px-8 lg:px-12 pt-7 sm:pt-16 pb-6 sm:pb-12 flex-1 flex flex-col justify-between gap-8 sm:gap-12 text-[#FBF7EE]">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-10 items-start">
             {/* Column 1: Bigger Unboxed White-Script Logo + Venue Details + Enquiry CTAs */}
             <div className="lg:col-span-4 space-y-6">
@@ -57,7 +57,7 @@ export default function SiteFooter() {
                   width={340}
                   height={168}
                   referrerPolicy="no-referrer"
-                  className="h-20 sm:h-24 md:h-[108px] w-auto object-contain drop-shadow-[0_4px_14px_rgba(12,6,14,0.7)]"
+                  className="h-14 sm:h-20 md:h-[108px] w-auto object-contain drop-shadow-[0_4px_14px_rgba(12,6,14,0.7)]"
                 />
               </Link>
 

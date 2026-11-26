@@ -187,7 +187,7 @@ export default function SiteHeader() {
               animate={{ opacity: 1, y: 0, scale: 1 }}
               exit={{ opacity: 0, y: -10, scale: 0.98 }}
               transition={{ duration: 0.24, ease: [0.16, 1, 0.3, 1] }}
-              className="fixed inset-x-3 top-[72px] bottom-3 z-50 flex flex-col justify-between gap-5 overflow-y-auto rounded-2xl border border-[#774D78]/20 bg-[#FBF7EE]/98 p-4 sm:p-5 shadow-2xl md:hidden"
+              className="fixed inset-x-3 top-[68px] max-h-[calc(100dvh-80px)] z-50 flex flex-col justify-start gap-4 overflow-y-auto rounded-2xl border border-[#774D78]/20 bg-[#FBF7EE]/98 p-4 shadow-2xl md:hidden"
             >
               <div className="space-y-4">
                 {/* Featured Interactive Menu Book Card */}

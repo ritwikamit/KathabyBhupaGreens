@@ -5,7 +5,7 @@
   --font-serif: var(--font-cormorant), Georgia, "Times New Roman", serif;
   --font-sans: var(--font-cormorant), Georgia, "Times New Roman", serif;
   --font-cursive: var(--font-dancing), Georgia, cursive;
-  --font-menu-display: var(--font-menu), Georgia, serif;
+  --font-menu-display: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
   --color-katha-plum: #774D78;
   --color-katha-plum-dark: #5D3A5E;
   --color-katha-mauve: #AF8EB1;
@@ -74,10 +74,10 @@
   }
 }
 
-/* Distinct carved serif font style for menus & navigation */
+/* Clean simple font style for menus & navigation */
 .font-menu {
-  font-family: var(--font-menu), Georgia, serif;
-  letter-spacing: 0.03em;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  letter-spacing: 0.01em;
 }
 
 /* Tactile hover enlargement helpers */

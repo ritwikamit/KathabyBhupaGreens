@@ -562,6 +562,15 @@ export default function KathaGlobeMap({
       rafId = requestAnimationFrame(renderFrame);
 
       const st = globeStateRef.current;
+
+      // Smooth auto-rotation alive motion keeping Katha pinned and constantly visible
+      if (!dragging && viewModeRef.current === 'globe') {
+        const autoYaw = defaultYaw + Math.sin(now * 0.0007) * 0.35;
+        const autoPitch = defaultPitch + Math.cos(now * 0.0005) * 0.12;
+        st.targetYaw += (autoYaw - st.targetYaw) * 0.03;
+        st.targetPitch += (autoPitch - st.targetPitch) * 0.03;
+      }
+
       // Smooth spring damping
       st.yaw += (st.targetYaw - st.yaw) * 0.12;
       st.pitch += (st.targetPitch - st.pitch) * 0.12;

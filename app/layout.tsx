@@ -32,10 +32,19 @@ const cinzelMenu = Cinzel({
   display: 'swap',
 });
 
+const siteUrl =
+  process.env.NEXT_PUBLIC_SITE_URL ||
+  process.env.APP_URL ||
+  (process.env.VERCEL_PROJECT_PRODUCTION_URL
+    ? `https://${process.env.VERCEL_PROJECT_PRODUCTION_URL}`
+    : undefined) ||
+  (process.env.VERCEL_URL ? `https://${process.env.VERCEL_URL}` : undefined) ||
+  'https://kathabybhupagreens.com';
+
+const formattedBaseUrl = siteUrl.startsWith('http') ? siteUrl : `https://${siteUrl}`;
+
 export const metadata: Metadata = {
-  metadataBase: new URL(
-    process.env.APP_URL || 'https://kathabybhupagreens.com',
-  ),
+  metadataBase: new URL(formattedBaseUrl),
   title: {
     default: 'Katha by Bhupa Greens | Restaurant in Darbhanga',
     template: '%s | Katha by Bhupa Greens',
@@ -71,15 +80,17 @@ export const metadata: Metadata = {
     title: 'Katha by Bhupa Greens | Restaurant in Darbhanga',
     description:
       'Visit Katha by Bhupa Greens, located inside the Bhupa Greens campus in Darbhanga. Browse the menu, find directions, and contact the restaurant.',
-    url: 'https://kathabybhupagreens.com',
+    url: formattedBaseUrl,
     type: 'website',
     locale: 'en_IN',
     siteName: 'Katha by Bhupa Greens',
     images: [
       {
-        url: '/og-image.jpg',
+        url: `${formattedBaseUrl}/og-image.jpg`,
+        secureUrl: `${formattedBaseUrl}/og-image.jpg`,
         width: 1200,
         height: 630,
+        type: 'image/jpeg',
         alt: 'Katha by Bhupa Greens - Restaurant & Dining in Darbhanga',
       },
     ],
@@ -89,7 +100,7 @@ export const metadata: Metadata = {
     title: 'Katha by Bhupa Greens | Restaurant in Darbhanga',
     description:
       'Visit Katha by Bhupa Greens, located inside the Bhupa Greens campus in Darbhanga. Browse the menu, find directions, and contact the restaurant.',
-    images: ['/og-image.jpg'],
+    images: [`${formattedBaseUrl}/og-image.jpg`],
   },
   robots: {
     index: true,

@@ -338,7 +338,7 @@ function BookPageRenderer({
         <div className="relative z-10 flex items-center justify-center my-1.5">
           <div className="relative w-full max-w-[205px] aspect-[5/4] overflow-hidden rounded-xl border border-[#774D78]/20 bg-white/85 p-1.5 shadow-sm">
             <EditorialImage
-              src="/katha-photos/dining-hall.jpg"
+              src="/katha-photos/dining-hall.webp"
               alt="Katha by Bhupa Greens dining room"
               sizes="210px"
               containerClassName="relative w-full h-full rounded-lg overflow-hidden"
@@ -392,7 +392,7 @@ function BookPageRenderer({
         <div className="relative z-10 flex items-center justify-center my-2">
           <div className="relative w-full max-w-[210px] aspect-[5/4] overflow-hidden rounded-xl border border-[#774D78]/20 bg-white/85 p-1.5 shadow-sm">
             <EditorialImage
-              src="/katha-photos/bookshelf-corner.jpg"
+              src="/katha-photos/bookshelf-corner.webp"
               alt="Quiet reading corner at Katha by Bhupa Greens"
               sizes="210px"
               containerClassName="relative w-full h-full rounded-lg overflow-hidden"

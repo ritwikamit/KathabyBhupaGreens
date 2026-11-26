@@ -10,4 +10,7 @@ coverage/
 .open-next/
 .wrangler/
 .dev.vars*
+Pictures/
+pages hero/
+morePhotos/
 

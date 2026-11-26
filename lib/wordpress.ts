@@ -99,7 +99,7 @@ export async function getMenuCategories(): Promise<MenuCategory[]> {
       shortSummary:
         cat.acf?.short_summary || stripHtml(cat.description).slice(0, 110),
       description: stripHtml(cat.description),
-      heroImage: cat.acf?.hero_image || '/katha-photos/dining-hall.jpg',
+      heroImage: cat.acf?.hero_image || '/katha-photos/dining-hall.webp',
       heroAlt:
         cat.acf?.hero_alt || `${stripHtml(cat.name)} at Katha by Bhupa Greens`,
       order: cat.acf?.display_order ?? idx + 1,
