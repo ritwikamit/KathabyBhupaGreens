@@ -33,25 +33,74 @@ const cinzelMenu = Cinzel({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL(
+    process.env.APP_URL || 'https://kathabybhupagreens.com',
+  ),
   title: {
     default: 'Katha by Bhupa Greens | Restaurant in Darbhanga',
     template: '%s | Katha by Bhupa Greens',
   },
   description:
     'Visit Katha by Bhupa Greens, located inside the Bhupa Greens campus in Darbhanga. Browse the menu, view the dining space, read the journal, find directions, and contact the restaurant.',
+  keywords: [
+    'Katha by Bhupa Greens',
+    'Restaurant in Darbhanga',
+    'Best restaurant in Darbhanga',
+    'Bhupa Greens Darbhanga',
+    'Family dining Darbhanga',
+    'Cafe in Darbhanga',
+    'Indian food Darbhanga',
+    'Biryani in Darbhanga',
+    'South Indian in Darbhanga',
+  ],
+  authors: [{ name: 'Katha by Bhupa Greens' }],
+  creator: 'Katha by Bhupa Greens',
+  icons: {
+    icon: [
+      { url: '/favicon.ico', sizes: '32x32' },
+      { url: '/icon.png', sizes: '512x512', type: 'image/png' },
+    ],
+    apple: [
+      { url: '/apple-icon.png', sizes: '180x180', type: 'image/png' },
+    ],
+  },
+  alternates: {
+    canonical: '/',
+  },
   openGraph: {
     title: 'Katha by Bhupa Greens | Restaurant in Darbhanga',
     description:
       'Visit Katha by Bhupa Greens, located inside the Bhupa Greens campus in Darbhanga. Browse the menu, find directions, and contact the restaurant.',
+    url: 'https://kathabybhupagreens.com',
     type: 'website',
     locale: 'en_IN',
     siteName: 'Katha by Bhupa Greens',
+    images: [
+      {
+        url: '/og-image.jpg',
+        width: 1200,
+        height: 630,
+        alt: 'Katha by Bhupa Greens - Restaurant & Dining in Darbhanga',
+      },
+    ],
   },
   twitter: {
     card: 'summary_large_image',
     title: 'Katha by Bhupa Greens | Restaurant in Darbhanga',
     description:
       'Visit Katha by Bhupa Greens, located inside the Bhupa Greens campus in Darbhanga. Browse the menu, find directions, and contact the restaurant.',
+    images: ['/og-image.jpg'],
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      'max-video-preview': -1,
+      'max-image-preview': 'large',
+      'max-snippet': -1,
+    },
   },
 };
 

@@ -30,7 +30,7 @@ export default function FindUsPage() {
     <div className="mx-auto max-w-6xl px-5 sm:px-8 pt-7 sm:pt-10 space-y-16 sm:space-y-20">
       {/* Compact Page Hero Banner from pages hero/findus.jpg */}
       <PageHeroBanner
-        imageSrc="/katha-photos/pages-hero/findus.jpg"
+        imageSrc="/katha-photos/pages-hero/findus.webp"
         imageAlt="Katha bistro counter opening out toward the sunlit green lawns of Bhupa Greens"
         icon={<Compass className="h-4 w-4 shrink-0" aria-hidden="true" />}
         eyebrow="Location & Contact"

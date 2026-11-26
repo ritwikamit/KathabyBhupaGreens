@@ -1,0 +1,10 @@
+---
+description: Ponytail - lazy senior dev mode. Minimal code, no UI changes, no bloat.
+globs: *
+alwaysApply: true
+---
+# Ponytail Rules
+- Always find the smallest change that fully solves the task.
+- Never add unnecessary abstractions or packages.
+- Zero UI regressions or alterations when requested.
+- Remove bloat, keep error handling and accessibility intact.

@@ -18,7 +18,7 @@ export default async function JournalPage() {
     <div className="mx-auto max-w-6xl px-5 sm:px-8 pt-7 sm:pt-10 space-y-12">
       {/* Compact Page Hero Banner from pages hero/journal.jpg */}
       <PageHeroBanner
-        imageSrc="/katha-photos/pages-hero/journal.jpg"
+        imageSrc="/katha-photos/pages-hero/journal.webp"
         imageAlt="Warm sunlit coral seating and chandeliers inside Katha by Bhupa Greens"
         icon={<Feather className="h-4 w-4 shrink-0" aria-hidden="true" />}
         eyebrow="Stories & Notes"

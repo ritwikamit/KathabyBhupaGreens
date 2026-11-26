@@ -74,7 +74,7 @@ export default function OurStoryPage() {
         <div className="lg:col-span-6 flex justify-center lg:justify-end">
           <div className="interactive-media relative aspect-square w-full max-w-[460px] overflow-hidden rounded-xl border border-[#774D78]/18 bg-[#F1E3C4]/35">
             <EditorialImage
-              src="/katha-photos/counter-bistro.jpg"
+              src="/katha-photos/counter-bistro.webp"
               alt="Counter and coffee bar inside Katha by Bhupa Greens looking out to the campus garden"
               priority
               sizes="(max-width: 1024px) 100vw, 460px"
@@ -147,7 +147,7 @@ export default function OurStoryPage() {
           <figure className="lg:col-span-5 space-y-3 max-w-md mx-auto w-full lg:max-w-none">
             <div className="interactive-media relative aspect-[3/4] w-full overflow-hidden rounded-xl border border-[#774D78]/16 bg-[#F1E3C4]/35">
               <EditorialImage
-                src="/katha-photos/bookshelf-corner.jpg"
+                src="/katha-photos/bookshelf-corner.webp"
                 alt="Curated bookshelf corner inside Katha filled with books"
                 sizes="(max-width: 1024px) 100vw, 42vw"
                 containerClassName="relative w-full h-full"
@@ -167,7 +167,7 @@ export default function OurStoryPage() {
           <figure className="lg:col-span-7 space-y-3">
             <div className="interactive-media relative aspect-square max-h-[480px] w-full overflow-hidden rounded-xl border border-[#774D78]/16 bg-[#F1E3C4]/35">
               <EditorialImage
-                src="/katha-photos/dining-hall.jpg"
+                src="/katha-photos/dining-hall.webp"
                 alt="Main dining room inside Katha by Bhupa Greens with long wooden tables and warm chandeliers"
                 sizes="(max-width: 1024px) 100vw, 58vw"
                 containerClassName="relative w-full h-full"

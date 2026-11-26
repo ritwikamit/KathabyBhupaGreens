@@ -9,25 +9,34 @@ export default function InitialLoader() {
   const [visible, setVisible] = useState(true);
 
   useEffect(() => {
+    const startTime = Date.now();
+    let hideTimer: ReturnType<typeof setTimeout> | null = null;
     let dismissed = false;
-    const hide = () => {
-      if (!dismissed) {
+
+    const scheduleHide = () => {
+      if (dismissed) return;
+      const elapsed = Date.now() - startTime;
+      const delay = Math.max(0, 1000 - elapsed);
+      hideTimer = setTimeout(() => {
         dismissed = true;
         setVisible(false);
-      }
+      }, delay);
     };
 
-    const timer = window.setTimeout(hide, 750);
     if (document.readyState === 'complete') {
-      // Keep minimum subtle brand reveal without blocking
+      scheduleHide();
     } else {
-      window.addEventListener('load', () => {
-        window.setTimeout(hide, 350);
-      }, { once: true });
+      window.addEventListener('load', scheduleHide, { once: true });
+      const fallbackTimer = setTimeout(scheduleHide, 1200);
+      return () => {
+        window.removeEventListener('load', scheduleHide);
+        clearTimeout(fallbackTimer);
+        if (hideTimer) clearTimeout(hideTimer);
+      };
     }
 
     return () => {
-      window.clearTimeout(timer);
+      if (hideTimer) clearTimeout(hideTimer);
     };
   }, []);
 

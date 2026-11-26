@@ -26,6 +26,7 @@
         "world-atlas": "^2.0.2",
       },
       "devDependencies": {
+        "@dietrichgebert/ponytail": "^5.3.3",
         "@opennextjs/cloudflare": "^1.20.19",
         "@tailwindcss/postcss": "4.1.11",
         "@tailwindcss/typography": "^0.5.19",
@@ -212,6 +213,8 @@
     "@cspotcode/source-map-support": ["@cspotcode/source-map-support@0.8.1", "", { "dependencies": { "@jridgewell/trace-mapping": "0.3.9" } }, "sha512-IchNf6dN4tHoMFIn/7OE8LWZ19Y6q/67Bmf6vnGREv8RSbBVb9LPJxEcnwrcwX6ixSvaiGoomAUvu4YSxXrVgw=="],
 
     "@dabh/diagnostics": ["@dabh/diagnostics@2.0.9", "", { "dependencies": { "@so-ric/colorspace": "^1.1.6", "enabled": "2.0.x", "kuler": "^2.0.0" } }, "sha512-R6siwR65Hm+3yfgP7o8DKhNvputQAwfoz9zTc3kyDudnomj2/BcLmD+uGQQPICjuFUp8ounPBU+jmKsocwVVAg=="],
+
+    "@dietrichgebert/ponytail": ["@dietrichgebert/ponytail@5.3.3", "", {}, "sha512-Gq0ESMi1ZkcY+dvH1dyhOzR3+pYQ/LGW39E4dExcCzhaLe1AMPE43sPrW/JbEiaC986dUWeSzs97WfTABLkdDg=="],
 
     "@dimforge/rapier3d-compat": ["@dimforge/rapier3d-compat@0.12.0", "", {}, "sha512-uekIGetywIgopfD97oDL5PfeezkFpNhwlzlaEYNOA0N6ghdsOvh/HYjSMek5Q2O1PYvRSDFcqFVJl4r4ZBwOow=="],
 

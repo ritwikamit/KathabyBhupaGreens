@@ -483,7 +483,7 @@ export default async function HomePage() {
           <figure className="lg:col-span-7 space-y-3">
             <div className="interactive-media relative aspect-square max-h-[480px] w-full overflow-hidden rounded-xl border border-[#774D78]/16 bg-[#F1E3C4]/35">
               <EditorialImage
-                src="/katha-photos/dining-hall.jpg"
+                src="/katha-photos/dining-hall.webp"
                 alt="Main dining room inside Katha by Bhupa Greens with long wooden tables and warm chandeliers"
                 sizes="(max-width: 1024px) 100vw, 58vw"
                 containerClassName="relative w-full h-full"
@@ -498,7 +498,7 @@ export default async function HomePage() {
           <figure className="lg:col-span-5 space-y-3 max-w-md mx-auto w-full lg:max-w-none">
             <div className="interactive-media relative aspect-[3/4] w-full overflow-hidden rounded-xl border border-[#774D78]/16 bg-[#F1E3C4]/35">
               <EditorialImage
-                src="/katha-photos/bookshelf-corner.jpg"
+                src="/katha-photos/bookshelf-corner.webp"
                 alt="Bookshelf corner inside Katha filled with books beside quiet cafe tables"
                 sizes="(max-width: 1024px) 100vw, 42vw"
                 containerClassName="relative w-full h-full"
@@ -604,7 +604,7 @@ export default async function HomePage() {
             <figure className="space-y-2.5">
               <div className="interactive-media relative aspect-[5/7] w-full overflow-hidden rounded-xl border border-[#774D78]/16 bg-[#F1E3C4]/35">
                 <EditorialImage
-                  src="/katha-photos/exterior-evening.jpg"
+                  src="/katha-photos/exterior-evening.webp"
                   alt="Evening exterior entrance of Katha by Bhupa Greens with warm lights"
                   sizes="(max-width: 768px) 100vw, 28vw"
                   containerClassName="relative w-full h-full"
@@ -619,7 +619,7 @@ export default async function HomePage() {
             <figure className="space-y-2.5">
               <div className="interactive-media relative aspect-[5/7] w-full overflow-hidden rounded-xl border border-[#774D78]/16 bg-[#F1E3C4]/35">
                 <EditorialImage
-                  src="/katha-photos/campus-walkway.jpg"
+                  src="/katha-photos/campus-walkway.webp"
                   alt="Lit palm-lined pathway leading toward Katha inside the Bhupa Greens campus"
                   sizes="(max-width: 768px) 100vw, 28vw"
                   containerClassName="relative w-full h-full"

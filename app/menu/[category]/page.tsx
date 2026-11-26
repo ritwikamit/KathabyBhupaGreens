@@ -112,7 +112,7 @@ export default async function DedicatedMenuCategoryPage({
             <EditorialImage
               src={
                 isDrinks
-                  ? '/katha-photos/beverages/masala-chai.jpg'
+                  ? '/katha-photos/beverages/masala-chai.webp'
                   : currentCategory.heroImage
               }
               alt={currentCategory.heroAlt}

@@ -940,11 +940,14 @@ export default function KathaGlobeMap({
                 </div>
               </APIProvider>
             ) : (
-              <div className="w-full h-full flex items-center justify-center bg-[#231526] text-center px-8">
-                <p className="text-xs sm:text-sm text-[#D8C8D9]">
-                  Loading live Google Map for Katha by Bhupa Greens…
-                </p>
-              </div>
+              <iframe
+                title="Katha by Bhupa Greens - Google Maps"
+                src="https://maps.google.com/maps?q=26.1796778,85.8486927+(Katha+by+Bhupa+Greens)&t=&z=16&ie=UTF8&iwloc=&output=embed"
+                className="w-full h-full border-0"
+                loading="lazy"
+                allowFullScreen
+                referrerPolicy="no-referrer-when-downgrade"
+              />
             )}
           </motion.div>
 

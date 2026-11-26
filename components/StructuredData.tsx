@@ -24,7 +24,15 @@ export default function StructuredData({
     url: baseUrl,
     telephone: SITE_CONFIG.phone,
     email: SITE_CONFIG.email,
-    image: `${baseUrl}/katha-photos/hero-interior.webp`,
+    image: [
+      `${baseUrl}/og-image.jpg`,
+      `${baseUrl}/katha-photos/hero-interior.webp`,
+    ],
+    logo: `${baseUrl}/icon.png`,
+    priceRange: '₹₹',
+    currenciesAccepted: 'INR',
+    paymentAccepted: 'Cash, UPI, Credit Card, Debit Card',
+    acceptsReservations: 'True',
     address: {
       '@type': 'PostalAddress',
       streetAddress: 'Inside Bhupa Greens Campus, NH27 / NH57, Shahpur',
