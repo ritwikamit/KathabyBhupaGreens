@@ -1,0 +1,6 @@
+{
+  "name": "Katha by Bhupa Greens",
+  "description": "Visit Katha by Bhupa Greens, located inside the Bhupa Greens campus in Darbhanga. Browse the menu, view the dining space, read the journal, find directions, and contact the restaurant.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
